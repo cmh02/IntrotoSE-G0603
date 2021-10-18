@@ -1,0 +1,41 @@
+'''
+Created on Oct 14, 2021
+
+@author: chrishinkson
+'''
+
+
+services = { 'Air freshener' : 1 , 'Rain repellent': 2, 'Tire shine' : 2, 'Wax' : 3, 'Vacuum' : 5 }
+base_wash = 10
+total = 0
+
+service_choice1 = input()
+service_choice2 = input()
+
+def choice(opt):
+    if opt == '-':
+        return 0
+    elif opt == 'Air freshener':
+        print('Air freshener -- $1')
+        return 1
+    elif opt == 'Rain repellent':
+        print('Rain repellent -- $2')
+        return 2
+    elif opt == 'Tire shine':
+        print('Tire shine -- $2')
+        return 2
+    elif opt == 'Wax':
+        print('Wax -- $3')
+        return 3
+    elif opt == 'Vacuum':
+        print('Vacuum -- $5')
+        return 5
+        
+total += 10
+
+print('Zycar Wash')
+print('Base car wash -- $10')
+total += choice(service_choice1)
+total += choice(service_choice2)
+print('----')
+print('Total price: ${}'.format(total))
