@@ -39,6 +39,3 @@ total += choice(service_choice1)
 total += choice(service_choice2)
 print('----')
 print('Total price: ${}'.format(total))
-
-
-edit
